@@ -1,6 +1,6 @@
 C:
-mkdir C:\ projects
-cd C:\ projects
+mkdir C:\projects
+cd C:\projects
 npx create-react-app form-validation
 cd form-validation
 Code . 
