@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/babi-110905/pr2.git', branch: 'main'
+            }
+        }
+        stage('Build') {
+            steps {
+                bat 'javac Calculator.java'
+            }
+        }
+        stage('Run') {
+            steps {
+                bat 'java Calculator'
+            }
+        }
+    }
+}
