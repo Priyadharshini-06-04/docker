@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/babi-110905/pr2.git', branch: 'main'
+                git url: 'https://github.com/Priyadharshini-06-04/docker.git', branch: 'main'
             }
         }
         stage('Build') {
